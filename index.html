@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#08090a">
+	<meta name="description" content="班级共享相册协议与校方提供照片管理文档。">
+	<title>班级照片管理文档 | Zhao-Yidan1982</title>
+	<style>
+		:root {
+			color-scheme: dark;
+			--background: #08090a;
+			--surface: #111314;
+			--text: #f0f1f2;
+			--muted: #a0a3a6;
+			--accent: #20ded2;
+			--notice: #f2c66d;
+		}
+
+		* { box-sizing: border-box; }
+
+		body {
+			min-height: 100vh;
+			margin: 0;
+			background: var(--background);
+			color: var(--text);
+			font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+			line-height: 1.55;
+		}
+
+		a { color: inherit; }
+
+		.page {
+			display: flex;
+			width: min(100% - 40px, 740px);
+			min-height: 100vh;
+			min-height: 100svh;
+			flex-direction: column;
+			justify-content: center;
+			margin: 0 auto;
+			padding: 56px 0 28px;
+		}
+
+		.back-link {
+			align-self: flex-start;
+			margin-bottom: 22px;
+			color: var(--muted);
+			font-size: 14px;
+			text-decoration: none;
+		}
+
+		.back-link:hover { color: var(--accent); }
+
+		h1 {
+			margin: 0;
+			color: var(--accent);
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 1.3;
+		}
+
+		.intro {
+			margin: 7px 0 20px;
+			color: var(--muted);
+			font-size: 15px;
+		}
+
+		.notice {
+			margin: 0 0 24px;
+			padding: 12px 14px;
+			border-left: 2px solid var(--notice);
+			background: var(--surface);
+			color: #c5c7c8;
+			font-size: 13px;
+		}
+
+		h2 {
+			margin: 0 0 6px;
+			color: var(--muted);
+			font-size: 16px;
+			font-weight: 500;
+		}
+
+		.document-list { display: grid; gap: 2px; }
+
+		.document-link {
+			display: grid;
+			min-height: 72px;
+			grid-template-columns: 36px minmax(0, 1fr) 18px;
+			gap: 14px;
+			align-items: center;
+			padding: 10px 12px;
+			border-radius: 5px;
+			text-decoration: none;
+			transition: background-color 160ms ease, transform 160ms ease;
+		}
+
+		.document-link:hover, .document-link:focus-visible {
+			background: var(--surface);
+			transform: translateX(3px);
+		}
+
+		.document-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+		.document-number {
+			color: var(--accent);
+			font-size: 12px;
+			font-weight: 700;
+			text-align: center;
+		}
+
+		.document-copy { min-width: 0; }
+
+		.document-title { display: block; font-size: 16px; font-weight: 650; line-height: 1.4; }
+
+		.document-description {
+			display: block;
+			margin-top: 2px;
+			color: var(--muted);
+			font-size: 13px;
+		}
+
+		.chevron { color: #d5d7d8; font-size: 22px; text-align: right; }
+		.document-link:hover .chevron, .document-link:focus-visible .chevron { color: var(--accent); }
+
+		footer {
+			margin-top: 26px;
+			color: #777b7e;
+			font-size: 12px;
+			text-align: center;
+		}
+
+		@media (max-width: 520px) {
+			.page { width: calc(100% - 32px); justify-content: flex-start; padding-top: 48px; }
+			h1 { font-size: 26px; }
+			.document-link { grid-template-columns: 28px minmax(0, 1fr) 16px; gap: 10px; padding-inline: 8px; }
+			.document-title { font-size: 15px; }
+			.document-description { font-size: 12px; }
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			*, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+		}
+	</style>
+</head>
+<body>
+	<main class="page">
+		<a class="back-link" href="../index.html">← 返回个人主页（../index.html）</a>
+		<header>
+			<h1 id="page-title">班级照片管理文档</h1>
+			<p class="intro">班级共享相册管理与校方提供照片协作相关文本。</p>
+		</header>
+
+		<p class="notice">以下文件为草案或协作说明，不代表学校规定、法律意见或照片授权。实际使用前请结合班级情况讨论，并以学校的正式安排为准。</p>
+
+		<section aria-labelledby="documents-title">
+			<h2 id="documents-title">文档目录</h2>
+			<div class="document-list">
+				<a class="document-link" href="班级共享相册协议-班级自治版.md">
+					<span class="document-number">01</span>
+					<span class="document-copy">
+						<span class="document-title">班级共享相册协议（班级自治版）</span>
+						<span class="document-description">相册权限、班级内传播、公开发布与隐私保护。</span>
+					</span>
+					<span class="chevron" aria-hidden="true">›</span>
+				</a>
+				<a class="document-link" href="校级提供照片管理协议-班级协作版.md">
+					<span class="document-number">02</span>
+					<span class="document-copy">
+						<span class="document-title">校方提供照片管理协议（班级协作版）</span>
+						<span class="document-description">班级成员配合处理校方提供照片的协作说明。</span>
+					</span>
+					<span class="chevron" aria-hidden="true">›</span>
+				</a>
+			</div>
+		</section>
+
+		<footer>文档内容以对应 Markdown 原文为准。</footer>
+	</main>
+</body>
+</html>
