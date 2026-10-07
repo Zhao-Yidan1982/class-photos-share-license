@@ -51,6 +51,28 @@
 
 		.back-link:hover { color: var(--accent); }
 
+		.github-link {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			margin: 0 0 18px;
+			padding: 8px 14px;
+			border: 1px solid #2a2d30;
+			border-radius: 999px;
+			background: var(--surface);
+			color: var(--text);
+			font-size: 13px;
+			font-weight: 600;
+			text-decoration: none;
+			transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+		}
+
+		.github-link:hover, .github-link:focus-visible {
+			border-color: var(--accent);
+			background: #171b1d;
+			transform: translateY(-1px);
+		}
+
 		h1 {
 			margin: 0;
 			color: var(--accent);
@@ -147,6 +169,7 @@
 	<main class="page">
 		<a class="back-link" href="../index.html">← 返回个人主页（../index.html）</a>
 		<header>
+			<a class="github-link" href="https://github.com/Zhao-Yidan1982/class-photos-share-license" target="_blank" rel="noopener noreferrer">to GitHub</a>
 			<h1 id="page-title">班级照片管理文档</h1>
 			<p class="intro">班级共享相册管理与校方提供照片协作相关文本。</p>
 		</header>
